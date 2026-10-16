@@ -1,0 +1,90 @@
+*{ margin: 0; 
+   padding: 0; 
+   box-sizing: border-box;
+   font-family: 'Outfit', sans-serif;
+
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --title-color: hsl(212, 45%, 89%);
+    --text-color: hsl(216, 15%, 48%);
+    --background-color: hsl(218, 44%, 22%);
+}
+
+.body{
+    color: #000000;
+}
+/*Este es el contendor de toda la card*/
+.card{
+    background-color: var(--white);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    width: 375px;
+    max-width: 100%;
+    height: 600px;
+    max-height: 700px;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Este es el contendor de la imagen*/
+.img-container {
+    width: 90%;
+    height: 90%;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/*esta es la imagen dentro del contenedor y prmer elmento del card*/
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card-content {
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    
+}
+
+
+.card-title {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    color: var(--background-color);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.card-text {
+    font-size: 15px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    color: var(--text-color);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+- Slate 300: hsl(212, 45%, 89%)
+- Slate 500: hsl(216, 15%, 48%)
+- Slate 900: hsl(218, 44%, 22%)
